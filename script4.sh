@@ -32,7 +32,7 @@ ls -l -R -S 2>> tmp/errors | grep "se" | head -2
 
 echo -e "\n-> 4.3"
 
-cat -n f* */f* */*/f* 2>> tmp/errors | sort -d
+grep -rnh --include='f*' . 2>> tmp/errors | sort -d
 
 # 4.4
 # Вывести содержимое файлов с номерами строк в директории rapidash7, оставить 
@@ -58,5 +58,6 @@ ls -R -Sr 2>> tmp/errors | grep "^m"
 
 echo -e "\n-> 4.6"
 
+# grep -cr --include='*l' .
 wc -l *l */*l 2>> tmp/errors | sort -nk1
 
