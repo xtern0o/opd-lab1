@@ -23,7 +23,7 @@ wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidas
 
 echo "\n-> 4.2"
 
-ls -R -S 2>> tmp/errors | grep "se" | head -2
+ls -l -R -S 2>> tmp/errors | grep "se" | head -2
 
 # 4.3
 # Рекурсивно вывести содержимое файлов с номерами строк из директории lab0, 
