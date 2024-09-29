@@ -5,7 +5,7 @@
 cd lab0
 
 chmod u+r hippowdon2
-chmod u+w rapidash7/*
+chmod u+wr rapidash7/*
 chmod u+w doduo6/spheal/*
 
 rm buneary4

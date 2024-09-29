@@ -12,7 +12,7 @@ touch tmp/errors
 # отсортировать вывод по уменьшению количества, ошибки доступа 
 # перенаправить в файл в директории /tmp
 
-echo "\n-> 4.1"
+echo -e "\n-> 4.1"
 
 wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidash7/burmy rapidash7/simisear 2>> tmp/errors | sort -nk1 -r
 
@@ -21,7 +21,7 @@ wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidas
 # в директории lab0, содержащих строку "se", список отсортировать по убыванию 
 # размера, ошибки доступа перенаправить в файл в директории /tmp
 
-echo "\n-> 4.2"
+echo -e "\n-> 4.2"
 
 ls -l -R -S 2>> tmp/errors | grep "se" | head -2
 
@@ -30,7 +30,7 @@ ls -l -R -S 2>> tmp/errors | grep "se" | head -2
 # имя которых начинается на 'f', строки отсортировать по имени a->z, 
 # ошибки доступа перенаправить в файл в директории /tmp
 
-echo "\n-> 4.3"
+echo -e "\n-> 4.3"
 
 cat -n f* */f* */*/f* 2>> tmp/errors | sort -d
 
@@ -38,7 +38,7 @@ cat -n f* */f* */*/f* 2>> tmp/errors | sort -d
 # Вывести содержимое файлов с номерами строк в директории rapidash7, оставить 
 # только строки, содержащие "Sla", ошибки доступа не подавлять и не перенаправлять
 
-echo "\n-> 4.4"
+echo -e "\n-> 4.4"
 
 cat -n rapidash7/* | grep "Sla"
 
@@ -47,7 +47,7 @@ cat -n rapidash7/* | grep "Sla"
 # начинающихся на символ 'm', список отсортировать по возрастанию размера, 
 # ошибки доступа перенаправить в файл в директории /tmpЫ
 
-echo "\n-> 4.5"
+echo -e "\n-> 4.5"
 
 ls -R -Sr 2>> tmp/errors | grep "^m"
 
@@ -56,7 +56,7 @@ ls -R -Sr 2>> tmp/errors | grep "^m"
 # имя которых заканчивается на 'l', отсортировать вывод по уменьшению количества, 
 # ошибки доступа перенаправить в файл в директории /tmp
 
-echo "\n-> 4.6"
+echo -e "\n-> 4.6"
 
 wc -l *l */*l 2>> tmp/errors | sort -nk1
 
