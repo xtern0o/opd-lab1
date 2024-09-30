@@ -3,8 +3,7 @@
 #
 
 cd lab0
-mkdir tmp
-touch tmp/errors
+touch /tmp/error
 
 # 4.1
 # Подсчитать количество символов содержимого файлов: 
@@ -14,7 +13,7 @@ touch tmp/errors
 
 echo -e "\n-> 4.1"
 
-wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidash7/burmy rapidash7/simisear 2>> tmp/errors | sort -nk1 -r
+wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidash7/burmy rapidash7/simisear 2>> /tmp/error | sort -nk1 -r
 
 # 4.2
 # Вывести два первых элемента рекурсивного списка имен и атрибутов файлов 
@@ -23,7 +22,7 @@ wc -c musharna hippowdon2/treecko hippowdon2/prinplup rapidash7/nidorina rapidas
 
 echo -e "\n-> 4.2"
 
-ls -l -R -S 2>> tmp/errors | grep "se" | head -2
+ls -l -R -S 2>> /tmp/error | grep "se" | head -2
 
 # 4.3
 # Рекурсивно вывести содержимое файлов с номерами строк из директории lab0, 
@@ -32,7 +31,7 @@ ls -l -R -S 2>> tmp/errors | grep "se" | head -2
 
 echo -e "\n-> 4.3"
 
-grep -rnh --include='f*' . 2>> tmp/errors | sort -d
+grep -rnh --include='f*' . 2>> /tmp/error | sort -d
 
 # 4.4
 # Вывести содержимое файлов с номерами строк в директории rapidash7, оставить 
@@ -49,7 +48,7 @@ cat -n rapidash7/* | grep "Sla"
 
 echo -e "\n-> 4.5"
 
-ls -R -Sr 2>> tmp/errors | grep "^m"
+ls -R -Sr 2>> /tmp/error | grep "^m"
 
 # 4.6
 # Рекурсивно подсчитать количество строк содержимого файлов из директории lab0,
@@ -58,7 +57,7 @@ ls -R -Sr 2>> tmp/errors | grep "^m"
 
 echo -e "\n-> 4.6"
 
-grep -cr --include='*l' . 2>> tmp/errors | sort -t ":" -nk2 -r
+grep -cr --include='*l' . 2>> /tmp/error | sort -t ":" -nk2 -r
 
 # wc -l *l */*l 2>> tmp/errors | sort -nk1
 

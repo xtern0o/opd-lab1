@@ -4,7 +4,7 @@
 
 cd lab0
 
-chmod -rw--w---- buneary4
+chmod 620 buneary4
 chmod 363 doduo6
 chmod 640 musharna
 chmod 751 doduo6/beldum
