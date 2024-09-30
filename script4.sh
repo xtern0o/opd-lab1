@@ -58,6 +58,7 @@ ls -R -Sr 2>> tmp/errors | grep "^m"
 
 echo -e "\n-> 4.6"
 
-# grep -cr --include='*l' .
-wc -l *l */*l 2>> tmp/errors | sort -nk1
+grep -cr --include='*l' . 2>> tmp/errors | sort -t ":" -nk2 -r
+
+# wc -l *l */*l 2>> tmp/errors | sort -nk1
 
